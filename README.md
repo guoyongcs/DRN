@@ -4,7 +4,7 @@ Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Si
 
 
 
-![dual](/Users/Young/Dropbox/research/paper/MyWork/DRN/code/DRN-github/imgs/dual.png)
+![dual](imgs/dual.png)
 
 
 
