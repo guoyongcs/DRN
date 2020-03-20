@@ -4,7 +4,8 @@ Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Si
 
 <p align="center">
 <img src="imgs/dual.png" alt="Dual Regression Scheme" width="90%" align=center />
-<\p>
+</p>
+
 
 ## Dependencies
 ```
