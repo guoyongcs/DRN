@@ -25,7 +25,6 @@ Results of our [pretrained models][https://github.com/guoyongcs/DRN/releases/tag
 You can evaluate our models on several widely used [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar), including Set5, Set14, B100, Urban100, Manga109. Note that using an old PyTorch version (earlier than 1.1) would yield wrong results.
 
 ```bash
-cd src
 python main.py --data_dir $DATA_DIR$ --data_test $TEST_DATA$ --scale $SCALE$ --model $MODEL$ --save $SAVE_DIR$ --pre_train $PRETRAINED_MODEL$ --test_only --save_results --calc_ssim
 ```
 
@@ -44,7 +43,6 @@ python main.py --data_dir $DATA_DIR$ --data_test $TEST_DATA$ --scale $SCALE$ --m
 We use DF2K dataset (the combination of [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) datasets) to train DRN-S and DRN-L.
 
 ```bash
-cd src
 python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --scale $SCALE$ --model $MODEL$
 ```
 
