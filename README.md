@@ -13,7 +13,7 @@ Python 3.7, PyTorch>=1.1, numpy, skimage, imageio, matplotlib, tqdm
 
 ## Quickstart (Model Testing)
 
-Results of our [pretrained models][https://github.com/guoyongcs/DRN/releases/tag/v0.1]:
+Results of our [pretrained models](https://github.com/guoyongcs/DRN/releases/tag/v0.1):
 
 | Model | Scale | #Params (M) | PSNR on Set5 (dB) |
 | :---: | :---: | :---------: | :---------------: |
