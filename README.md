@@ -2,7 +2,7 @@
 
 Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Single Image Super-Resolution".
 
-<img src="imgs/dual.png" alt="Dual Regression Scheme" width="90%" />
+<img src="imgs/dual.png" alt="Dual Regression Scheme" width="90%" align=center />
 
 ## Dependencies
 ```
