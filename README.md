@@ -9,7 +9,7 @@ Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Si
 
 ## Dependencies
 ```
-Python 3.7, PyTorch>=1.1, numpy, skimage, imageio, matplotlib, tqdm
+Python>=3.7, PyTorch>=1.1, numpy, skimage, imageio, matplotlib, tqdm
 ```
 
 
