@@ -52,8 +52,8 @@ python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --scale $SCALE$ --model $
 
 - DATA_DIR: path to save data
 - SAVE_DIR: path to save experiment results
-- SCALE: super resolution scale, 4 or 8
-- MODEL: model type, DRN-S or DRN-L
+- SCALE: super resolution scale, such as 4 and 8
+- MODEL: model type, such as DRN-S and DRN-L
 
 
 
