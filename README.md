@@ -1,4 +1,4 @@
-# Closed-loop Matters: Dual Regression Networks for Single Image Super-Resolution
+# Closed-loop Matters: Dual Regression Networks for Single Image Super-Resolution [[arXiv]](https://arxiv.org/pdf/2003.07018.pdf)
 
 Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Single Image Super-Resolution".
 
