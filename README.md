@@ -39,7 +39,7 @@ python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --data_test $DATA_TEST$ -
 - PRETRAINED_MODEL: path of the pretrained model
 
 
-For example, you can use the following command to test our DRN-S model for 4$\times$ SR.
+For example, you can use the following command to test our DRN-S model for 4x SR.
 
 ```bash
 python main.py --data_dir ~/srdata --save ../experiments --data_test Set5 --scale 4 --model DRN-S --pre_train ../pretrained_models/DRNS4x.pt --test_only —save_results
@@ -60,7 +60,7 @@ python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --scale $SCALE$ --model $
 - MODEL: model type, such as DRN-S and DRN-L
 
 
-For example, you can use the following command to train the DRN-S model for 4$\times$ SR.
+For example, you can use the following command to train the DRN-S model for 4x SR.
 
 ```bash
 python main.py --data_dir ~/srdata --save ../experiments --scale 4 --model DRN-S
