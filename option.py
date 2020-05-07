@@ -33,6 +33,8 @@ parser.add_argument('--no_augment', action='store_true',
 parser.add_argument('--model', help='model name: DRN-S | DRN-L', required=True)
 parser.add_argument('--pre_train', type=str, default='.',
                     help='pre-trained model directory')
+parser.add_argument('--pre_train_dual', type=str, default='.',
+                    help='pre-trained dual model directory')
 parser.add_argument('--n_blocks', type=int, default=30,
                     help='number of residual blocks, 16|30|40|80')
 parser.add_argument('--n_feats', type=int, default=16,
@@ -67,7 +69,7 @@ parser.add_argument('--skip_threshold', type=float, default='1e6',
                     help='skipping batch that has large error')
 parser.add_argument('--dual_weight', type=float, default=0.1,
                     help='the weight of dual loss')
-parser.add_argument('--save', type=str, default='../experiment/',
+parser.add_argument('--save', type=str, default='./experiment/test/',
                     help='file name to save')
 parser.add_argument('--print_every', type=int, default=100,
                     help='how many batches to wait before logging training status')

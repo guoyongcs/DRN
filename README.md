@@ -28,7 +28,11 @@ Results of our [pretrained models](https://github.com/guoyongcs/DRN/releases):
 You can evaluate our models on several widely used [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar), including Set5, Set14, B100, Urban100, Manga109. Note that using an old PyTorch version (earlier than 1.1) would yield wrong results.
 
 ```bash
-python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --data_test $DATA_TEST$ --scale $SCALE$ --model $MODEL$ --pre_train $PRETRAINED_MODEL$ --test_only --save_results
+python main.py --data_dir $DATA_DIR$ \
+--save $SAVE_DIR$ --data_test $DATA_TEST$ \
+--scale $SCALE$ --model $MODEL$ \
+--pre_train $PRETRAINED_MODEL$ \
+--test_only --save_results
 ```
 
 - DATA_DIR: path to save data
@@ -42,8 +46,19 @@ python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --data_test $DATA_TEST$ -
 For example, you can use the following command to test our DRN-S model for 4x SR.
 
 ```bash
-python main.py --data_dir ~/srdata --save ../experiments --data_test Set5 --scale 4 --model DRN-S --pre_train ../pretrained_models/DRNS4x.pt --test_only —save_results
+python main.py --data_dir ~/srdata \
+--save ../experiments --data_test Set5 \
+--scale 4 --model DRN-S \
+--pre_train ../pretrained_models/DRNS4x.pt \
+--test_only --save_results
 ```
+
+If you want to load the pretrained dual model, you can add the following option into the command.
+
+```
+--pre_train_dual ../pretrained_models/DRNS4x_dual_model.pt
+```
+
 
 
 ## Training Method
@@ -51,19 +66,23 @@ python main.py --data_dir ~/srdata --save ../experiments --data_test Set5 --scal
 We use DF2K dataset (the combination of [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) datasets) to train DRN-S and DRN-L.
 
 ```bash
-python main.py --data_dir $DATA_DIR$ --save $SAVE_DIR$ --scale $SCALE$ --model $MODEL$
+python main.py --data_dir $DATA_DIR$ \
+--scale $SCALE$ --model $MODEL$ \
+--save $SAVE_DIR$
 ```
 
 - DATA_DIR: path to save data
-- SAVE_DIR: path to save experiment results
 - SCALE: super resolution scale, such as 4 and 8
 - MODEL: model type, such as DRN-S and DRN-L
+- SAVE_DIR: path to save experiment results
 
 
 For example, you can use the following command to train the DRN-S model for 4x SR.
 
 ```bash
-python main.py --data_dir ~/srdata --save ../experiments --scale 4 --model DRN-S
+python main.py --data_dir ~/srdata \
+--scale 4 --model DRN-S \
+--save ../experiments 
 ```
 
 
