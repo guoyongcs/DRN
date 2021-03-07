@@ -28,12 +28,14 @@ Results of our [pretrained models](https://github.com/guoyongcs/DRN/releases):
 You can evaluate our models on several widely used [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar), including Set5, Set14, B100, Urban100, Manga109. Note that using an old PyTorch version (earlier than 1.1) would yield wrong results.
 
 Please organize the benchmark datasets using the following hierarchy.
--srdata
-    -benchmark
+```
+- srdata
+    - benchmark
          - Set5
             - LR_bicubic
                 - X4
                     - babyx4.png
+```
 <p align="center">
 <img src="imgs/data.png" alt="Dual Regression Scheme" width="100%" align=center />
 </p>
