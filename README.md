@@ -27,6 +27,20 @@ Results of our [pretrained models](https://github.com/guoyongcs/DRN/releases):
 
 You can evaluate our models on several widely used [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar), including Set5, Set14, B100, Urban100, Manga109. Note that using an old PyTorch version (earlier than 1.1) would yield wrong results.
 
+Please organize the benchmark datasets using the following hierarchy.
+-srdata
+    -benchmark
+         - Set5
+            - LR_bicubic
+                - X4
+                    - babyx4.png
+<p align="center">
+<img src="imgs/data.png" alt="Dual Regression Scheme" width="90%" align=center />
+</p>
+You may also revise the code of dataloader to load your own data.
+
+
+You can use the following script to obtain the testing results:
 ```bash
 python main.py --data_dir $DATA_DIR$ \
 --save $SAVE_DIR$ --data_test $DATA_TEST$ \
@@ -52,6 +66,15 @@ python main.py --data_dir ~/srdata \
 --pre_train ../pretrained_models/DRNS4x.pt \
 --test_only --save_results
 ```
+
+You will obtain the output like this.
+<p align="center">
+<img src="imgs/Set5.png" alt="An example of model testing." width="90%" align=center />
+</p>
+
+
+
+
 
 If you want to load the pretrained dual model, you can add the following option into the command.
 
