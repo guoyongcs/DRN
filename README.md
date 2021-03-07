@@ -35,7 +35,7 @@ Please organize the benchmark datasets using the following hierarchy.
                 - X4
                     - babyx4.png
 <p align="center">
-<img src="imgs/data.png" alt="Dual Regression Scheme" width="90%" align=center />
+<img src="imgs/data.png" alt="Dual Regression Scheme" width="100%" align=center />
 </p>
 You may also revise the code of dataloader to load your own data.
 
