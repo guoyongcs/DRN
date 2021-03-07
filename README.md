@@ -39,7 +39,7 @@ Please organize the benchmark datasets using the following hierarchy.
 <p align="center">
 <img src="imgs/data.png" alt="Dual Regression Scheme" width="100%" align=center />
 </p>
-You may also revise the code of dataloader to load your own data.
+
 
 
 You can use the following script to obtain the testing results:
