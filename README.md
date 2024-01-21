@@ -7,6 +7,11 @@ Pytorch implementation for "Closed-loop Matters: Dual Regression Networks for Si
 </p>
 
 
+## Important Update
+- [x] We released the code and models of our [Dual Regression Compression (DRC)](https://github.com/guoyongcs/DRC) towards lightweight image SR.
+- [x] Our DRC paper is already available on [arXiv](https://arxiv.org/pdf/2207.07929.pdf).
+
+
 ## Dependencies
 ```
 Python>=3.7, PyTorch>=1.1, numpy, skimage, imageio, matplotlib, tqdm
